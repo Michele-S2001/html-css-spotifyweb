@@ -105,10 +105,6 @@ a {
     font-size: 13px;
 }
 
-.tool.song-tool .thumbnail-description span {
-    display: block;
-}
-
 .thumbnail-description .song-details {
     color: var(--grey-400);
     font-size: 11px;
@@ -137,19 +133,20 @@ a {
     max-width: 550px;
 }
 
-.tool.control-tools .song-buttons{
+.tool.control-tools .player-controls{
     display: flex;
     gap: 22px;
     justify-content: center;
 }
 
-.tool.control-tools .song-buttons .play-btn {
+.tool.control-tools .player-controls .play {
     font-size: 30px;
     padding: 0 10px;
 }
 
-.tool.control-tools .song-buttons .play-btn:hover {
+.tool.control-tools .player-controls .play:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .tool.control-tools .timeline {
@@ -170,13 +167,43 @@ a {
 
 .song-line {
     flex-grow: 1;
-    height: 3px;
+    height: 4px;
     border-radius: 5px;
     background-color: var(--grey-600);
+    position: relative;
+    cursor: pointer;
+}
+
+.song-line .hover-line {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 4px;
+    background-color: var(--grey-400);
+    border-radius: 5px;
+}
+
+.song-line:hover .hover-line {
+    background-color: var(--lime);
+}
+
+.song-line:hover .dot {
+    display: initial;
+}
+
+.hover-line .dot {
+    position: absolute;
+    right: -2px;
+    bottom: -4px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: none;
 }
 
 /* NAVBAR STYLING */
-.main-content .navbar {
+/* .main-content .navbar {
     padding: 5px 11px 10px 11px;
 }
 
@@ -187,10 +214,10 @@ a {
 
 .logo .small-logo {
     height: 28px;
-}
+} */
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 768px) {
     .main-content .navbar {
         flex-basis: 230px;
     }

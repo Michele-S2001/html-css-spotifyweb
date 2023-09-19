@@ -54,24 +54,42 @@
                     </div>
                 </li>
                 <li class="tool control-tools">
-                    <div class="song-buttons items-center">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-regular fa-circle-play play-btn"></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                    </div>
+                    <ul class="player-controls items-center">
+                        <li class="shuffle">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </li>
+                        <li class="previous-track">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </li>
+                        <li class="play">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </li>
+                        <li class="next-track">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </li>
+                        <li class="loop">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </li>
+                    </ul>
                     <div class="timeline items-center">
-                        <div class="song-duration partial-time">0:25</div>
-                        <span class="song-line"></span>
-                        <div class="song-duration total-time">4:35</div>
+                        <time class="song-duration partial-time">0:25</time>
+                        <span class="song-line">
+                            <span class="hover-line">
+                                <div class="dot"></div>
+                            </span>
+                        </span>
+                        <time class="song-duration total-time">4:35</time>
                     </div>
                 </li>
                 <li class="tool volume-tool items-center">
                     <i class="fa-solid fa-list"></i>
                     <i class="fa-solid fa-desktop"></i>
                     <i class="fa-solid fa-volume-high"></i>
-                    <span class="song-line"></span>
+                    <span class="song-line">
+                        <span class="hover-line">
+                            <div class="dot"></div>
+                        </span>
+                    </span>
                 </li>
             </ul>
         </aside>
