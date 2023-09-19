@@ -36,3 +36,52 @@ a {
     color: currentColor;
     display: inline-block;
 }
+
+
+
+/* #APP STYLING */
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* .MAIN-CONTENT STYLING */
+#app .main-content {
+    flex-grow: 1;
+    display: flex;
+    background-color: var(--dark-blue);
+}
+
+/* .NAVBAR STYLING */
+.main-content .navbar {
+    flex-basis: 230px;
+    flex-shrink: 0;
+    background-color: var(--black);
+}
+
+/* .PAGE-FOCUS STYLING */
+.main-content .page-focus {
+    flex-grow: 1;
+}
+
+/* .TOOL-BAR STYLING */
+#app .tool-bar {
+    background-color: var(--grey-800);
+}
+
+/* debug */
+/* 
+.debug #app {
+    border: 5px solid red;
+}
+
+.debug .main-content {
+    border: 3px solid green;
+}
+*/
+.debug .tool-bar {
+    padding: 20px 0;
+} 
+
+
