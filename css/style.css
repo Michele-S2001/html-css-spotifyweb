@@ -1,3 +1,10 @@
+/* FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* COLOR PALETTE */
 :root {
    --white: #FFFFFF;
@@ -37,6 +44,14 @@ a {
     display: inline-block;
 }
 
+/* UTILITY CLASSES */
+.items-center {
+    align-items: center;
+}
+
+.text-white {
+    color: var(--white);
+}
 
 
 /* #APP STYLING */
@@ -55,7 +70,7 @@ a {
 
 /* .NAVBAR STYLING */
 .main-content .navbar {
-    flex-basis: 230px;
+    flex-basis: 50px;
     flex-shrink: 0;
     background-color: var(--black);
 }
@@ -63,12 +78,94 @@ a {
 /* .PAGE-FOCUS STYLING */
 .main-content .page-focus {
     flex-grow: 1;
+    overflow: auto;
 }
 
 /* .TOOL-BAR STYLING */
 #app .tool-bar {
     background-color: var(--grey-800);
+    padding: 12px 10px;
 }
+
+.tool-bar .tools {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool.song-tool {
+    display: flex;
+    gap: 11px;
+}
+
+.tool.song-tool .thumbnail-song img {
+    height: 28px;
+}
+
+.tool.song-tool .thumbnail-description .album-name {
+    font-size: 13px;
+}
+
+.tool.song-tool .thumbnail-description span {
+    color: var(--grey-400);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.tool.song-tool .song-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--grey-400);
+}
+
+.tool.control-tools {
+    width: 50%;
+    max-width: 550px;
+}
+
+.tool.control-tools .song-buttons{
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+
+.tool.control-tools .song-buttons .play-btn {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.tool.control-tools .timeline {
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    margin-top: 13px;
+    font-weight: 700;
+}
+
+.song-line {
+    flex-grow: 1;
+    flex-basis: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--grey-600);
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 550px) {
+    .main-content .navbar {
+        flex-basis: 230px;
+    }
+}
+
+
+
+
+
 
 /* debug */
 /* 
@@ -80,8 +177,11 @@ a {
     border: 3px solid green;
 }
 */
-.debug .tool-bar {
+/* .debug .tool-bar {
     padding: 20px 0;
-} 
+}  */
 
+/* .debug .tool {
+    border: 2px solid greenyellow;
+} */
 
