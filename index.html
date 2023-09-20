@@ -12,11 +12,14 @@
     <div id="app">
         <div class="main-content">
             <header class="side-bar">
+
+                <!-- Logo -->
                 <figure class="logo">
                     <img class="big-logo" src="./img/logo.svg" alt="Spotify logo">
                     <img class="small-logo" src="./img/logo-small.svg" alt="Spotify logo">
                 </figure>
 
+                <!-- Navbar -->
                 <nav class="navbar">
                     <ul class="navigation">
                         <li class="nav-item items-center">
@@ -39,6 +42,8 @@
                         </li>
                     </ul>
                 </nav>
+
+                <!-- Playlists section -->
                 <div class="playlist-section">
                     <h3 class="playlist-title">playlist</h3>
                     <div class="add-playlist items-center">
@@ -58,6 +63,7 @@
                     </ul>
                 </div>
 
+                <!-- Cta for downloading the app & cta to access your profile -->
                 <div class="cta">
                     <div class="cta-download">
                         <figure class="download-icon">
@@ -75,10 +81,17 @@
                     </div>
                 </div>
             </header>
+            <!-- HEADER END -->
+
+            <!-- "Page focus" is the main section, you'll find playlists, artists and everything else -->
             <main class="page-focus">
+
+                <!-- Button for purchase the complite app without ads-->
                 <div class="upgrade-bar">
                     <a href="#" class="btn-upgrade">effettua l'upgrade</a>
                 </div>
+
+                <!-- menu to navigate and find every song category -->
                 <menu class="categories-menu">
                     <li class="category-item">
                         <a href="#">in evidenza</a>
@@ -99,6 +112,8 @@
                         <a href="#">scopri</a>
                     </li>
                 </menu>
+
+                <!-- Playlist showcase -->
                 <div class="playlist-carousel">
                     <h2 class="carousel-title padding-left-15">Recently played</h2>
                     <div class="carousel-showcase">
@@ -164,6 +179,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Second playlist showcase -->
                 <div class="playlist-carousel">
                     <h2 class="carousel-title padding-left-15">Creato per Jhon Doe</h2>
                     <p class="carousel-subtitle sm-text padding-left-15">Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -188,6 +205,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Artists showcase -->
                 <div class="playlist-carousel">
                     <h2 class="carousel-title padding-left-15">Artisti più popolari</h2>
                     <p class="carousel-subtitle sm-text padding-left-15">Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -200,24 +219,28 @@
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </figure>
-                            <h3 class="card__name">Release Radar</h3>
+                            <h3 class="card__name">Lana del Rey</h3>
                         </div>
                         <div class="card artist-card items-center">
                             <figure class="card__img">
-                                <img src="./img/einaudi.jpeg" alt="einaudi">
+                                <img src="./img/einaudi.jpeg" alt="Einaudi">
                                 <div class="overlay-btn overlay-btn--circle">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </figure>
-                            <h3 class="card__name">Daily Mix 1</h3>
+                            <h3 class="card__name">Ludovico Einaudi</h3>
                         </div>
                     </div>
                 </div>
             </main>
         </div>
+        <!-- MAIN CONTENT END -->
 
+        <!-- Toolbar section -->
         <aside class="tool-bar text-white">
             <ul class="tools items-center">
+
+                <!-- In this portion you can view the album cover, the artist name and the album name. Adding the current song to your favorites playlist or to a personal playlist -->
                 <li class="tool song-tool items-center">
                     <figure class="thumbnail-song">
                         <img src="./img/sinister.jpeg" alt="sinister song">
@@ -238,6 +261,8 @@
                         </a>
                     </div>
                 </li>
+
+                <!-- In this portion there are the song controls -->
                 <li class="tool control-tools">
                     <ul class="player-controls items-center">
                         <li class="shuffle">
@@ -265,6 +290,8 @@
                         <time class="song-duration total-time">4:35</time>
                     </div>
                 </li>
+
+                <!-- In this portion there are others buttons and the volume bar -->
                 <li class="tool volume-tool items-center">
                     <i class="fa-solid fa-list"></i>
                     <i class="fa-solid fa-desktop"></i>
@@ -276,6 +303,8 @@
                 </li>
             </ul>
         </aside>
+        <!-- TOOLBAR END -->
     </div>
+    <!-- #APP END -->
 </body>
 </html>
