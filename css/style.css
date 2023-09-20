@@ -62,22 +62,6 @@ a {
     overflow: hidden;
 }
 
-/* .MAIN-CONTENT STYLING */
-#app .main-content {
-    flex-grow: 1;
-    display: flex;
-    background-color: var(--dark-blue);
-    overflow: hidden;
-}
-
-/* .SIDEBAR STYLING */
-.main-content .side-bar {
-    flex-basis: 50px;
-    flex-shrink: 0;
-    background-color: var(--black);
-    overflow: hidden;
-}   
-
 /* .PAGE-FOCUS STYLING */
 .main-content .page-focus {
     flex-grow: 1;
@@ -87,7 +71,6 @@ a {
 #app .tool-bar {
     background-color: var(--grey-800);
     padding: 12px 10px;
-    overflow: hidden;
 }
 
 .tool-bar .tools {
@@ -168,7 +151,7 @@ a {
     font-size: 13px;
 }
 
-.song-line {
+.song-line {    
     flex-grow: 1;
     border-radius: 5px;
     background-color: var(--grey-600);
@@ -204,19 +187,138 @@ a {
     transform: translate(-50%, -50%);
 }
 
-/* NAVBAR STYLING */
-/* .main-content .sidebar {
-    padding: 5px 11px 10px 11px;
+/* MAIN CONTENT STYLING */
+#app .main-content {
+    flex-grow: 1;
+    display: flex;
+    background-color: var(--dark-blue);
+    overflow: hidden;
 }
 
+ .main-content .side-bar {
+    padding: 5px 11px 10px 11px;
+    color: var(--grey-400);
+    font-weight: 700;
+}
+
+/* SIDEBAR */
+.main-content .side-bar {
+    flex-basis: 50px;
+    flex-shrink: 0;
+    background-color: var(--black);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}   
+
+/* logo styling */
 .logo .big-logo {
     height: 42px;
     display: none;
+    margin-bottom: 30px;
 }
 
 .logo .small-logo {
     height: 28px;
-} */
+    margin-bottom: 17px;
+}
+
+/* navbar styling */
+.navbar {
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.navigation .nav-item {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.nav-item .nav-img img {
+    height: 24px;
+}
+
+.nav-item .nav-text {
+    display: none;
+}
+
+/* playlist section styling */
+.playlist-section {
+    display: none;
+}
+
+.playlist-section .playlist-title {
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.playlist-section .add-playlist {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 25px;
+}
+
+.playlist-section .add-playlist .add {
+    padding: 9px 11px;
+    background-color: var(--grey-400);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.playlist-section .playlist-items .playlist-item {
+    font-size: 13px;
+    margin-bottom: 23px;
+}
+
+/* cta download app and profile button */
+.side-bar .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-bar .cta .cta-download {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+}
+
+.side-bar .cta .download-icon {
+    height: 16px;
+    aspect-ratio: 1;
+}
+
+.side-bar .cta .download-text {
+    font-size: 13px;
+    display: none;
+}
+
+.side-bar .cta .cta-profile {
+    display: flex;
+    gap: 11px;
+}
+
+.side-bar .cta .cta-profile .profile-img img {
+    height: 25px;
+    background-color: var(--grey-400);
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.side-bar .cta .cta-profile .profile-name {
+    color: var(--white);
+    font-size: 14px;
+    display: none;
+}
+
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -230,6 +332,48 @@ a {
 
     .tool.song-tool .thumbnail-song img {
         height: 42px;
+    }
+
+    .logo .small-logo {
+        display: none;
+    }
+
+    .logo .big-logo {
+        display: block;
+    }
+
+    .main-content .side-bar {
+        padding: 20px 11px 7px 21px;
+    }
+
+    .nav-item .nav-text {
+        display: block;
+    }
+
+    .playlist-section {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .side-bar .cta {
+        display: block;
+        align-self: stretch;
+    }
+
+    .side-bar .cta .download-text {
+        display: block;
+    }
+
+    .side-bar .cta .cta-download {
+        border-bottom: 1px solid var(--grey-400);
+    }
+
+    .side-bar .cta .cta-profile .profile-name {
+        display: block;
+    }
+
+    .navbar {
+        flex-grow: 0;
     }
 }
 
