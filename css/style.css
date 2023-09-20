@@ -338,7 +338,12 @@ a {
         display: none;
     }
 
-    .logo .big-logo {
+    .logo .big-logo,
+    .nav-item .nav-text,
+    .playlist-section,
+    .side-bar .cta,
+    .side-bar .cta .download-text,
+    .side-bar .cta .cta-profile .profile-name {
         display: block;
     }
 
@@ -346,30 +351,16 @@ a {
         padding: 20px 11px 7px 21px;
     }
 
-    .nav-item .nav-text {
-        display: block;
-    }
-
     .playlist-section {
-        display: block;
         flex-grow: 1;
     }
 
     .side-bar .cta {
-        display: block;
         align-self: stretch;
-    }
-
-    .side-bar .cta .download-text {
-        display: block;
     }
 
     .side-bar .cta .cta-download {
         border-bottom: 1px solid var(--grey-400);
-    }
-
-    .side-bar .cta .cta-profile .profile-name {
-        display: block;
     }
 
     .navbar {
