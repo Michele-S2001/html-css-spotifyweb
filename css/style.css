@@ -53,6 +53,15 @@ a {
     color: var(--white);
 }
 
+.sm-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--grey-600);
+}
+
+.padding-left-15 {
+    padding-left: 15px;
+}
 
 /* #APP STYLING */
 #app {
@@ -60,11 +69,6 @@ a {
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
-}
-
-/* .PAGE-FOCUS STYLING */
-.main-content .page-focus {
-    flex-grow: 1;
 }
 
 /* .TOOL-BAR STYLING */
@@ -316,7 +320,98 @@ a {
     color: var(--white);
     font-size: 14px;
     display: none;
+    text-transform: capitalize;
 }
+
+/* .PAGE-FOCUS STYLING */
+.main-content .page-focus {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.page-focus .upgrade-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 20px 28px 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left: 50px;
+    right: 0;
+}
+
+.page-focus .upgrade-bar .btn-upgrade {
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 40px;
+    border: 2px solid var(--white);
+    padding: 0 42px;
+    border-radius: 30px;
+}
+
+.page-focus .categories-menu {
+    color: var(--grey-400);
+    padding: 110px 30px 45px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 24px;
+    justify-content: center;
+}
+
+.categories-menu .category-item {
+    line-height: 25px;
+}
+
+/* playlist carousel */
+.page-focus .playlist-carousel {
+    padding: 0 5px;
+    margin-bottom: 45px;
+} 
+
+.playlist-carousel + .playlist-carousel .carousel-title {
+    margin-bottom: 10px;
+}
+
+.playlist-carousel .carousel-subtitle {
+    margin-bottom: 30px;
+}
+
+.playlist-carousel .carousel-title {
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 35px;
+}
+
+.carousel-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.carousel-showcase .card {
+    padding: 0 15px;
+    flex-basis: calc((100% / 2) - 15px);
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card__img {
+    margin-bottom: 21px;
+}
+
+.card .card__name{
+    color: var(--white);
+    margin-bottom: 11px;
+    text-align: center;
+    line-height: 19px;
+}
+
+.carousel-showcase .card.artist-card .card__img img {
+    border-radius: 50%;
+}
+
 
 
 
@@ -366,10 +461,24 @@ a {
     .navbar {
         flex-grow: 0;
     }
+
+    /* main content */
+    .page-focus .upgrade-bar {
+        left: 230px;
+    }
 }
 
+@media screen and (min-width: 927px) {
+    .carousel-showcase .card {
+        flex-basis: calc((100% / 4) - 15px);
+    }
+}
 
-
+@media screen and (min-width: 1142px) {
+    .carousel-showcase .card {
+        flex-basis: calc((100% / 6) - 15px);
+    }  
+}
 
 
 
