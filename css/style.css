@@ -59,6 +59,7 @@ a {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
 /* .MAIN-CONTENT STYLING */
@@ -66,6 +67,7 @@ a {
     flex-grow: 1;
     display: flex;
     background-color: var(--dark-blue);
+    overflow: hidden;
 }
 
 /* .NAVBAR STYLING */
@@ -78,13 +80,13 @@ a {
 /* .PAGE-FOCUS STYLING */
 .main-content .page-focus {
     flex-grow: 1;
-    overflow: auto;
 }
 
 /* .TOOL-BAR STYLING */
 #app .tool-bar {
     background-color: var(--grey-800);
     padding: 12px 10px;
+    overflow: hidden;
 }
 
 .tool-bar .tools {
@@ -234,7 +236,7 @@ a {
         display: initial;
     }
 
-    .navbar .logo .small-logo {
+    /* .navbar .logo .small-logo {
         display: none;
     }
 
@@ -244,7 +246,7 @@ a {
 
     .main-content .navbar {
         padding: 20px 21px 5px 21px;
-    }
+    } */
 }
 
 
