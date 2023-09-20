@@ -375,6 +375,11 @@ a {
     border: 2px solid var(--white);
     padding: 0 42px;
     border-radius: 30px;
+    transition: 0.2s linear;
+}
+
+.page-focus .upgrade-bar .btn-upgrade:hover {
+    transform: scale(1.1);
 }
 
 .page-focus .categories-menu {
