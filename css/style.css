@@ -366,6 +366,7 @@ a {
     position: fixed;
     left: 50px;
     right: 0;
+    z-index: 10;
 }
 
 .page-focus .upgrade-bar .btn-upgrade {
