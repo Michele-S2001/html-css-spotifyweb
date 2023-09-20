@@ -399,6 +399,28 @@ a {
 
 .card .card__img {
     margin-bottom: 21px;
+    position: relative;
+}
+
+.card .card__img .overlay-btn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.card .card__img .overlay-btn.overlay-btn--circle {
+    border-radius: 50%;
+}
+
+.card .card__img:hover .overlay-btn {
+    opacity: 1;
 }
 
 .card .card__name{
