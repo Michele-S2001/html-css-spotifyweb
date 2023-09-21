@@ -210,7 +210,7 @@ a {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }   
 
 /* logo styling */
@@ -494,6 +494,7 @@ a {
 @media screen and (min-width: 768px) {
     .main-content .side-bar {
         flex-basis: 230px;
+        align-items: flex-start ;
     }
 
     .tool.song-tool .song-cta {
