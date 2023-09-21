@@ -263,6 +263,10 @@ a {
     opacity: 0;
 }
 
+.nav-item.active .nav-img::before {
+    opacity: 1;
+}
+
 .nav-item:hover > ::before {
     opacity: 1;
 }
@@ -411,6 +415,10 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.2s ease-in;
+}
+
+.categories-menu .category-item.active a::after {
+    width: 50%;
 }
 
 .categories-menu .category-item:hover {
