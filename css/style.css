@@ -199,14 +199,11 @@ a {
     overflow: hidden;
 }
 
- .main-content .side-bar {
-    padding: 5px 11px 10px 11px;
-    color: var(--grey-400);
-    font-weight: 700;
-}
-
 /* SIDEBAR */
 .main-content .side-bar {
+    font-weight: 700;
+    color: var(--grey-400);
+    padding: 5px 11px 10px 11px;
     flex-basis: 50px;
     flex-shrink: 0;
     background-color: var(--black);
@@ -557,24 +554,3 @@ a {
         flex-basis: calc((100% / 6) - 15px);
     }  
 }
-
-
-
-/* debug */
-/* 
-.debug #app {
-    border: 5px solid red;
-}
-
-.debug .main-content {
-    border: 3px solid green;
-}
-*/
-/* .debug .tool-bar {
-    padding: 20px 0;
-}  */
-
-/* .debug .tool {
-    border: 2px solid greenyellow;
-} */
-
